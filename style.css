@@ -1,0 +1,102 @@
+header {
+  background-color: black;
+  border-bottom: 2px solid white;
+}
+
+header a {
+  color: white;
+  font-size: 16px;
+}
+
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+}
+
+#main {
+  display: flex;
+  padding: 24px;
+
+  font-weight: bold;
+  font-style: italic;
+
+  background-color: rgb(53, 53, 53);
+  color: white;
+  font-size: 18px;
+  background-image: url("images/fondo.png");
+}
+
+#main img {
+  flex: 1;
+}
+
+#main p {
+  flex: 1;
+  padding: 64px;
+}
+
+hr {
+  width: 100%;
+  border-width: 2px;
+}
+
+footer {
+  border-top: 2px solid rgb(96, 96, 96);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: black;
+  color: white;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  /* grid-template-columns: repeat(5, 1fr); */
+}
+
+/* responsive css */
+@media screen and (max-width: 768px){
+  body {
+    grid-template-rows: 1fr 3fr 2fr;
+  }
+
+  header ul img {
+    position: absolute;
+    top: 8px;
+    left: 35%;
+  }
+
+  header ul {
+    margin-top: 220px;
+  }
+
+  #main {
+    flex-direction: column;
+  }
+
+  #main img {
+    flex: none;
+  }
+  
+  #main p {
+    flex: none;
+    padding: 16px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
+
+/* responsive tablet
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  body {
+    background-color: pink;
+  }
+} */
