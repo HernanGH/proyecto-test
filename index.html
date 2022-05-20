@@ -8,9 +8,13 @@
   <!-- <link rel="stylesheet" href="https://hernangh.github.io/proyecto-test/style.css"> -->
   
   <!-- DESCARGANDO LOS ARCHIVOS (CARPETAS CSS y JS)-->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
 
-  <script src="js/bootstrap.min.js "></script>
+  <script src="js/bootstrap.min.js "></script> -->
+
+  <!-- USAN LOS ARCHIVOS POR CDN LINK DIRECTO-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- <header>
@@ -19,9 +23,15 @@
     </h1>
   </header> -->
 
-  <div class="container">
+  <div class="container-fluid">
     <h1>Título Principal</h1>
     <p>Aquí va el contenido.</p>
+    <p class="lead">Aquí va el contenido en un container fluid con clase lead.</p>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-xs-6">seccion 1</div>
+    <div class="col-md-4 col-xs-6">seccion 2</div>
+    <div class="col-md-4 col-xs-6">seccion 3</div>
   </div>
 </body>
 </html>
