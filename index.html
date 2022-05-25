@@ -6,13 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CLASE 11</title>
   <!-- <link rel="stylesheet" href="https://hernangh.github.io/proyecto-test/style.css"> -->
+  <link rel="stylesheet" href="styles.css">
   
-  <!-- DESCARGANDO LOS ARCHIVOS (CARPETAS CSS y JS)-->
+  <!-- 1 - DESCARGANDO LOS ARCHIVOS (CARPETAS CSS y JS)-->
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <script src="js/bootstrap.min.js "></script> -->
 
-  <!-- USAN LOS ARCHIVOS POR CDN LINK DIRECTO-->
+  <!-- 2 - USAN LOS ARCHIVOS POR CDN LINK DIRECTO-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
@@ -29,9 +34,191 @@
     <p class="lead">Aquí va el contenido en un container fluid con clase lead.</p>
   </div>
   <div class="row">
-    <div class="col-md-4 col-xs-6">seccion 1</div>
-    <div class="col-md-4 col-xs-6">seccion 2</div>
-    <div class="col-md-4 col-xs-6">seccion 3</div>
+    <div class="col-md-4 col-xs-6 border border-dark miestilo">seccion 1</div>
+    <div class="col-md-4 col-xs-6 border border-dark">seccion 2</div>
+    <div class="col-md-4 col-xs-6 border border-dark">seccion 3</div>
   </div>
+  <!-- <div class="row">
+    <div class="col-md-2 border border-dark">seccion 1</div>
+    <div class="col-md-2 border border-dark">seccion 2</div>
+    <div class="col-md-2 border border-dark">seccion 3</div>
+    <div class="col-md-2 border border-dark">seccion 4</div>
+    <div class="col-md-2 border border-dark">seccion 5</div>
+    <div class="col-md-2 border border-dark">seccion 6</div>
+    <div class="col-md-2 border border-dark">seccion 7</div>
+    <div class="col-md-2 border border-dark">seccion 8</div>
+    <div class="col-md-2 border border-dark">seccion 9</div>
+    <div class="col-md-2 border border-dark">seccion 10</div>
+    <div class="col-md-2 border border-dark">seccion 11</div>
+    <div class="col-md-2 border border-dark">seccion 12</div>
+  </div> -->
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+  
+
+  <div class="container">
+    <h2>Formulario Básico</h2>
+    <form action="#">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingrese email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" class="form-control" id="password" placeholder="Ingrese contraseña" name="password">
+      </div>
+      <div class="form-group">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Recordar Contraseña</label>
+      </div>
+      <button type="submit" class="btn btn-default">
+        Ingresar
+      </button>
+    </form>
+
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+
+    <img src="images/image-1.jpeg" class="rounded-circle img-fluid" alt="...">
+
+    <div class="btn-group-vertical"> <!-- Agrupando botones verticalmente -->
+      <h2>Estilo de Botones</h2>
+      <button type="button" class="btn">Básico</button>
+      <button type="button" class="btn btn-primary">Primario</button>
+      <button type="button" class="btn btn-secondary">Secundario</button>
+      <button type="button" class="btn btn-success">Exitoso</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-warning">Advertencia</button>
+      <button type="button" class="btn btn-danger">Peligroso</button>
+      <button type="button" class="btn btn-dark">Oscuro</button>
+      <button type="button" class="btn btn-light">Claro</button>
+      <button type="button" class="btn btn-link">Enlace</button> 	 
+    </div>
+    </div>
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Inicio</button>
+      <button type="button" class="btn btn-primary">Quienes Somos</button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        Integrantes
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Cantante</a>
+          <a class="dropdown-item" href="#">Bajo</a>
+        </div>
+      </div>
+    </div>
+    
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+    </ul>
+    
+    <div class="container">
+      <p>Menú básico horizontal:</p>
+      <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Quienes Somos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Historia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Newlestter</a>
+      </li>
+      </ul>
+    </div>
+    
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Collapsible Group Item #1
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Collapsible Group Item #2
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Collapsible Group Item #3
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
