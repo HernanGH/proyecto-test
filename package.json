@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile-css": "node-sass --include-path scss scss/prueba.scss css/prueba.css",
+    "sass": "sass scss/prueba.scss css/sass-style.css",
     "watch-css": "nodemon -e scss -x \"npm run compile-css\""
   },
   "author": "",
